@@ -1,0 +1,1144 @@
+@charset "UTF-8";
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, span {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+html,
+body,
+.root-sCon {
+  height: 100%;
+  background: #eee;
+}
+
+/*root界面*/
+#root-sCon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative
+  /*root分页器*/
+  /*底部相机*/
+}
+#root-sCon .swiper-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1
+  /*首页界面*/
+  /*发现界面*/
+}
+#root-sCon .swiper-wrapper #index #index-sCon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column
+  /*首页顶部分页器*/
+  /*登录*/
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1
+  /*首页的订阅页面*/
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top {
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper {
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide {
+  background: #f2f5f4;
+  padding-top: 0.40625rem;
+  border-top: 1px solid #e2e2e2;
+  height: auto;
+  overflow: auto;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide h2 {
+  height: 1.10938rem;
+  padding-left: 0.4375rem;
+  line-height: 1.10938rem;
+  background: white;
+  color: #828282;
+  font-size: 0.39063rem;
+  border-bottom: 1px solid #ebebeb;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item {
+  height: 1.64063rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .left {
+  width: 1.96875rem;
+  height: 1.96875rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .left a {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .left a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-bottom: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right .content_l p {
+  font-size: 0.3125rem;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right .content_l P:nth-child(1) {
+  color: black;
+  padding-top: 0.35938rem;
+  padding-bottom: 0.3125rem;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right .content_l P:nth-child(2) {
+  color: #b3b3b3;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right .content_r {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 28px;
+}
+#root-sCon .swiper-wrapper #index #index-sCon .swiper-wrapper .swiper-slide .top .swiper-wrapper .swiper-slide .items .item .right .content_r a {
+  width: 1.32813rem;
+  height: 0.76563rem;
+  border: 1px solid #9cb54b;
+  border-radius: 20px;
+  color: #9cb54b;
+  font-size: 0.34375rem;
+  text-align: center;
+  line-height: 0.76563rem;
+}
+#root-sCon .swiper-wrapper #index #index-sCon #index-sPag {
+  height: 1.32813rem;
+  position: static;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+#root-sCon .swiper-wrapper #index #index-sCon #index-sPag span {
+  width: 3.34375rem;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.51563rem;
+}
+#root-sCon .swiper-wrapper #index #index-sCon #index-sPag span.swiper-pagination-bullet-active {
+  border-bottom: 0.04688rem solid #9cc429;
+}
+#root-sCon .swiper-wrapper #index #index-sCon #index-sPag span:nth-of-type(1)::before {
+  content: "关注";
+}
+#root-sCon .swiper-wrapper #index #index-sCon #index-sPag span:nth-of-type(2)::before {
+  content: "订阅";
+}
+#root-sCon .swiper-wrapper #index #index-sCon .login {
+  width: 0.67188rem;
+  height: 0.53125rem;
+  background: url("../images/01.app-icons/dashboard_find_friend.png") no-repeat center center/0.67188rem 0.53125rem;
+  position: absolute;
+  right: 0.51563rem;
+  top: 0.3125rem;
+}
+#root-sCon .swiper-wrapper #find {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column
+  /*发现顶部搜索框*/
+  /*发现主界面*/
+}
+#root-sCon .swiper-wrapper #find .search {
+  padding: 0.1875rem 0.3125rem;
+  height: 1.3125rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.46875rem;
+  background: white;
+  position: relative;
+}
+#root-sCon .swiper-wrapper #find .search::after {
+  content: "";
+  width: 0.46875rem;
+  height: 0.46875rem;
+  background: url("../images/01.app-icons/choose_at_user_search.png") no-repeat center center/0.46875rem 0.46875rem;
+  position: absolute;
+  top: 0.4375rem;
+  left: 2rem;
+}
+#root-sCon .swiper-wrapper #find .search input {
+  border-radius: 0.15625rem;
+  background: #eee;
+  height: 0.9375rem;
+  width: 100%;
+  padding-left: 2.46875rem;
+  font-size: 0.46875rem;
+}
+#root-sCon .swiper-wrapper #find .search .login {
+  width: 0.67188rem;
+  height: 0.53125rem;
+  background: url("../images/01.app-icons/dashboard_find_friend.png") no-repeat center center/0.67188rem 0.53125rem;
+  position: absolute;
+  top: 0.35938rem;
+  right: 0.46875rem;
+}
+#root-sCon .swiper-wrapper #find .content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto
+  /*发现上部banner部分*/
+  /*发现穿搭部分*/
+  /*达人推荐*/
+  /*文章推荐*/
+}
+#root-sCon .swiper-wrapper #find .content .find-banner .swiper-wrapper .swiper-slide a {
+  display: block;
+  height: 4rem;
+}
+#root-sCon .swiper-wrapper #find .content .find-banner .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing {
+  padding-top: 0.5625rem;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide {
+  width: 7.625rem;
+  height: 9.21875rem;
+  background: white;
+  margin-bottom: 1.20313rem;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) h2 {
+  font-size: 0.59375rem;
+  color: #333;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  text-align: center;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) ul li {
+  width: 50%;
+  padding-bottom: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) ul li a img:nth-of-type(1) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(1) ul li a img:nth-of-type(3) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) h2 {
+  font-size: 0.59375rem;
+  color: #333;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  text-align: center;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) ul li {
+  width: 50%;
+  padding-bottom: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) ul li a img:nth-of-type(1) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(2) ul li a img:nth-of-type(3) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) h2 {
+  font-size: 0.59375rem;
+  color: #333;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  text-align: center;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) ul li {
+  width: 50%;
+  padding-bottom: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) ul li a img:nth-of-type(1) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(3) ul li a img:nth-of-type(3) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) h2 {
+  font-size: 0.59375rem;
+  color: #333;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  text-align: center;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) ul li {
+  width: 50%;
+  padding-bottom: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) ul li a img:nth-of-type(1) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(4) ul li a img:nth-of-type(3) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) h2 {
+  font-size: 0.59375rem;
+  color: #333;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  text-align: center;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) ul li {
+  width: 50%;
+  padding-bottom: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) ul li a img {
+  width: 100%;
+  height: 100%;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) ul li a img:nth-of-type(1) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .clothing .swiper-container .swiper-wrapper .swiper-slide:nth-of-type(5) ul li a img:nth-of-type(3) {
+  padding-right: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .people {
+  padding-bottom: 0.625rem;
+}
+#root-sCon .swiper-wrapper #find .content .people h2 {
+  font-size: 0.51563rem;
+  color: #969696;
+  padding-left: 0.48438rem;
+  padding-top: 0.51563rem;
+  background: white;
+}
+#root-sCon .swiper-wrapper #find .content .people ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  border-bottom: 1px solid #dcdcdc;
+  background: white;
+  padding-bottom: 0.64063rem;
+}
+#root-sCon .swiper-wrapper #find .content .people ul li {
+  padding-top: 0.64063rem;
+  width: 33.3333%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root-sCon .swiper-wrapper #find .content .people ul li a {
+  display: block;
+}
+#root-sCon .swiper-wrapper #find .content .people ul li a img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+}
+#root-sCon .swiper-wrapper #find .content .people ul li p {
+  font-size: 0.40625rem;
+  color: #9a9a9a;
+}
+#root-sCon .swiper-wrapper #find .content .people ul li p:nth-of-type(1) {
+  color: black;
+  font-size: 0.46875rem;
+  padding: 0.26563rem 0;
+}
+#root-sCon .swiper-wrapper #find .content .people .more {
+  height: 1.70313rem;
+  text-align: center;
+  background: white;
+}
+#root-sCon .swiper-wrapper #find .content .people .more a {
+  line-height: 1.70313rem;
+  font-size: 0.51563rem;
+  color: #a1c30f;
+}
+#root-sCon .swiper-wrapper #find .content .article h2 {
+  font-size: 0.51563rem;
+  color: #969696;
+  padding-left: 0.48438rem;
+  padding-top: 0.51563rem;
+  padding-bottom: 0.51563rem;
+  background: white;
+}
+#root-sCon .swiper-wrapper #find .content .article ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+#root-sCon .swiper-wrapper #find .content .article ul li {
+  width: 33.333%;
+  padding: 1px;
+}
+#root-sCon .swiper-wrapper #find .content .article ul li a img {
+  width: 3.3125rem;
+  height: 3.3125rem;
+}
+#root-sCon #root-sPag {
+  height: 1.5rem;
+  padding-top: 0.3125rem;
+  position: static;
+  background: white;
+}
+#root-sCon #root-sPag span {
+  height: 100%;
+  width: 20%;
+  border-radius: 0;
+  opacity: 0.3;
+  margin: 0;
+  position: absolute;
+}
+#root-sCon #root-sPag span.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+#root-sCon #root-sPag span::after {
+  font-size: 0.3125rem;
+  position: absolute;
+  bottom: 0.39063rem;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  color: #84A0A3;
+}
+#root-sCon #root-sPag span:nth-of-type(1) {
+  left: 0;
+  background: url("../images/01.app-icons/bb_btn_home_select.png") no-repeat top center/0.67188rem 0.67188rem;
+}
+#root-sCon #root-sPag span:nth-of-type(1)::after {
+  content: "首页";
+}
+#root-sCon #root-sPag span:nth-of-type(2) {
+  left: 20%;
+  background: url("../images/01.app-icons/bb_btn_label_select.png") no-repeat top center/0.875rem 0.67188rem;
+}
+#root-sCon #root-sPag span:nth-of-type(2)::after {
+  content: "发现";
+}
+#root-sCon #root-sPag span:nth-of-type(3) {
+  right: 20%;
+  background: url("../images/01.app-icons/bb_btn_message_select.png") no-repeat top center/0.65625rem 0.6875rem;
+}
+#root-sCon #root-sPag span:nth-of-type(3)::after {
+  content: "消息";
+}
+#root-sCon #root-sPag span:nth-of-type(4) {
+  right: 0;
+  background: url("../images/01.app-icons/bb_btn_account_select.png") no-repeat top center/0.67188rem 0.67188rem;
+}
+#root-sCon #root-sPag span:nth-of-type(4)::after {
+  content: "我的";
+}
+#root-sCon .camera {
+  width: 20%;
+  height: 0.98438rem;
+  position: absolute;
+  bottom: 0.29688rem;
+  left: 40%;
+  z-index: 998;
+  background: url("../images/01.app-icons/bb_btn_post_select.png") no-repeat center center/1.46875rem 0.98438rem;
+}
+
+/*消息页面*/
+#message-sCon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column
+  /*消息顶部分页器*/
+}
+#message-sCon .swiper-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#message-sCon #message-sPag {
+  height: 1.32813rem;
+  position: static;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+#message-sCon #message-sPag span {
+  width: 3.34375rem;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.51563rem;
+}
+#message-sCon #message-sPag span.swiper-pagination-bullet-active {
+  border-bottom: 0.04688rem solid #9cc429;
+}
+#message-sCon #message-sPag span:nth-of-type(1)::before {
+  content: "动态";
+}
+#message-sCon #message-sPag span:nth-of-type(2)::before {
+  content: "消息";
+}
+#message-sCon #message-sPag span:nth-of-type(3)::before {
+  content: "聊天";
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- 视口属性 -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>title</title>
+  <!-- 使用js 来修改 rem的的大小 -->
+  <script>
+    // 这里除以的份数 取决于 我们在设计图中转换时 除以的分数 这里以10来计算会方便一些
+    document.querySelector('html').style.fontSize = window.screen.width / 10 + 'px';
+  </script>
+
+  <!-- 导入 css -->
+  <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+  <!--root界面-->
+  <div id="root-sCon" class="root-sCon swiper-container">
+    <div class="swiper-wrapper">
+
+      <!--首页界面-->
+      <div class="swiper-slide" id="index">
+        <!--首页顶部-->
+        <div id="index-sCon" class="index-sCon swiper-container">
+          <!-- 首页顶部分页器 -->
+          <div id="index-sPag" class="index-sPag swiper-pagination"></div>
+          <!--登录-->
+          <a class="login" href="javascript:void(0)"></a>
+          <!--首页主界面  还没写内容-->
+          <div class="swiper-wrapper">
+            <!--关注部分-->
+            <div class="swiper-slide">Slide 01</div>
+            <!--订阅部分-->
+            <div class="swiper-slide">
+              <div class="top swiper-container">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h2>推荐订阅</h2>
+                    <div class="items">
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (64).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P>生活</P>
+                            <P>124343人订阅</P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)">订阅</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (65).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P>美物</P>
+                            <P>3143545人订阅</P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)">订阅</a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (66).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (67).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (68).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (69).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (70).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (71).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (72).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (73).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (74).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (75).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (76).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (77).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (78).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (79).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (80).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (81).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (82).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="left"><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (83).jpg" alt=""></a></div>
+                        <div class="right">
+                          <div class="content_l">
+                            <P></P>
+                            <P></P>
+                          </div>
+                          <div class="content_r"><a href="javascript:void(0)"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--发现界面-->
+      <div class="swiper-slide" id="find">
+        <!--发现顶部搜索框-->
+        <div class="search">
+          <input type="search" placeholder="搜索标签、用户、标题">
+          <a href="javascript:void(0)" class="login"></a>
+        </div>
+        <!--发现主界面-->
+        <div class="content">
+          <!--发现上部banner部分-->
+          <div class="find-banner swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner1.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner2.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner3.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner4.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner5.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner6.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner7.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner8.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner9.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)"><img src="images/05.banner/banner10.jpg" alt=""></a></div>
+            </div>
+            <div id="find-bannersPag" class="find-bannersPag swiper-pagination"></div>
+          </div>
+          <!--发现穿搭部分-->
+          <div class="clothing">
+            <div class="find-clothing swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h2>穿搭</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (123).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (126).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (127).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (128).jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <h2>穿搭</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (129).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (130).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (145).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (132).jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <h2>穿搭</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (146).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (134).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (135).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (136).jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <h2>穿搭</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (137).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (138).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (147).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (152).jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide">
+                  <h2>穿搭</h2>
+                  <ul>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (141).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (142).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (143).jpg" alt=""></a></li>
+                    <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (144).jpg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--推荐达人-->
+          <div class="people">
+            <h2>推荐达人</h2>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>嵐草</p>
+                <p>二次元达人</p>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>重音板栗子</p>
+                <p>美妆达人</p>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>JOCO</p>
+                <p>明星达人</p>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>运动去吧</p>
+                <p>运动达人</p>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>提香</p>
+                <p>热门达人</p>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (178).jpg" alt=""></a>
+                <p>男神执事</p>
+                <p>男神达人</p>
+              </li>
+            </ul>
+            <!--更多达人-->
+            <div class="more"><a href="javascript:void(0)">查看更多达人&gt;</a></div>
+          </div>
+          <!--文章推荐-->
+          <div class="article">
+            <h2>文章推荐</h2>
+            <ul>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1001).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1002).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1003).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1004).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1005).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1006).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1007).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1008).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1009).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1010).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1011).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1012).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1013).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1014).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1015).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1016).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1017).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1018).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1019).jpg" alt=""></a></li>
+              <li><a href="javascript:void(0)"><img src="images/02.head-icons/lofter_header_icon_ (1020).jpg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!--消息界面  还没写-->
+      <div class="swiper-slide">
+        <div id="message-sCon" class="index-sCon swiper-container">
+          <!-- 消息分页器 使用首页的分页器-->
+          <div id="message-sPag" class="index-sPag swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 01</div>
+            <div class="swiper-slide">Slide 02</div>
+            <div class="swiper-slide">Slide 03</div>
+          </div>
+        </div>
+      </div>
+
+      <!--我的界面  还没写-->
+      <div class="swiper-slide">Slide 4</div>
+
+
+
+
+    </div>
+    <!-- root分页器 -->
+    <div id="root-sPag" class="root-sPag swiper-pagination"></div>
+    <!--底部相机-->
+    <a class="camera" href="javascript:void(0)"></a>
+  </div>
+</body>
+
+</html>
+<script src="lib/swiper/js/swiper.min.js"></script>
+<script>
+  //root分页器
+  var myRootSwiper = new Swiper('.root-sCon', {
+    // 轮播方式  横着、竖着
+    // direction: 'vertical',
+    // 是否重复轮播
+    // loop: true,
+
+    // 如果需要分页器
+    pagination: '.root-sPag',
+    // 分页器点击切换
+    paginationClickable: true,
+  })
+
+
+  //首页顶部、消息（还没写）分页器
+  var myIndexSwiper = new Swiper('.index-sCon', {
+    // 轮播方式  横着、竖着
+    // direction: 'vertical',
+    // 是否重复轮播
+    // loop: true,
+
+    // 如果需要分页器
+    pagination: '.index-sPag',
+    // 分页器点击切换
+    paginationClickable: true,
+  })
+
+  // 首页订阅的内容
+  var topswiper = new Swiper('.top', {
+    scrollbar: '.swiper-scrollbar',
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    mousewheelControl: true,
+    freeMode: true,
+    roundLengths: true, //防止文字模糊
+  });
+
+
+  //发现页面上部Banner分页器
+  var myFindBannerSwiper = new Swiper('.find-banner', {
+    // 轮播方式  横着、竖着
+    // direction: 'vertical',
+    // 是否重复轮播
+    loop: true,
+
+    // 如果需要分页器
+    pagination: '.find-bannersPag',
+    paginationClickable: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false
+  })
+
+
+  //发现页面穿搭分页器
+  var myFindClothingSwiper = new Swiper('.find-clothing', {
+    // pagination: '.swiper-pagination',
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflow: {
+      rotate: 0,
+      stretch: -50,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false
+    }
+  })
+</script>
