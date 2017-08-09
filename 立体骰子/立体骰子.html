@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        body {
+            background: salmon;
+            /*margin: 200px auto;*/
+            perspective: 500px;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            display: block;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 3s;
+            margin: 200px auto;
+            /*background: green;*/
+            /*opacity: 0.3;*/
+        }
+
+        ul {
+            width: 200px;
+            height: 200px;
+            /*border: 1px solid #000;*/
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            float: left;
+        }
+
+        li {
+            width: 100%;
+            height: 100%;
+            background: #eeeeee;
+            border-radius: 20px;
+        }
+
+        div {
+            width: 50px;
+            height: 50px;
+            background: black;
+            border-radius: 50%;
+        }
+        /*第一个*/
+
+        .one li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /*第二个*/
+
+        .two li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /*第三个*/
+
+        .three li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .three li div:first-child {
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+
+        .three li div:last-child {
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+        /*第四个*/
+
+        .four li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50%;
+        }
+
+        .four li:first-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .four li:last-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        /*第五个*/
+
+        .five li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33.3333%;
+        }
+
+        .five li:first-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .five li:nth-child(2) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .five li:last-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        /*第六个*/
+
+        .six li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 33.3333%;
+        }
+
+        .six li:first-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .six li:nth-child(2) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .six li:last-child {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        /*前面*/
+
+        ul:first-child {
+            transform: translateZ(100px);
+            /*opacity: 0.3;*/
+        }
+        /*后面*/
+
+        ul:nth-child(2) {
+            transform: translateZ(-100px);
+            /*opacity: 0.3;*/
+        }
+        /*上面*/
+
+        ul:nth-child(3) {
+            transform: rotateX(90deg) translateZ(100px);
+            /*opacity: 0.3;*/
+        }
+        /*下面*/
+
+        ul:nth-child(4) {
+            transform: rotateX(-90deg) translateZ(100px);
+            /*opacity: 0.3;*/
+        }
+        /*左面*/
+
+        ul:nth-child(5) {
+            transform: rotateY(-90deg) translateZ(100px);
+            /*opacity: 0.3;*/
+        }
+        /*右面*/
+
+        ul:last-child {
+            transform: rotateY(90deg) translateZ(100px);
+            /*opacity: 0.3;*/
+        }
+
+        body:hover span {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        <ul class="one">
+    <li>
+        <div></div>
+    </li>
+</ul>
+<ul class="two">
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+</ul>
+<ul class="three">
+    <li>
+        <div></div>
+        <div></div>
+        <div></div>
+    </li>
+</ul>
+<ul class="four">
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+</ul>
+<ul class="five">
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+    <li>
+        <div></div>
+    </li>
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+</ul>
+<ul class="six">
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+    <li>
+        <div></div>
+        <div></div>
+    </li>
+</ul>
+    </span>
+
+</body>
+
+</html>
