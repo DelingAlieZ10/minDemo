@@ -12,6 +12,7 @@
 
         #main {
             position: relative;
+            margin: 0 auto;
         }
 
         .box {
@@ -203,18 +204,13 @@
 
         var oBoxW = oBoxs[0].offsetWidth;
         console.log(oBoxW);
-        console.log(oParent.style.width); // 写在行内的样式可以得到值
-        console.log(oParent.currentStyle.width); // chrome Firefox 报错；   IE 是设置的值
-        console.log(window.getComputedStyle(oParent).width); // IE8及以下低版本不支持 报错
-        console.log(oParent.getBoundingClientRect().width); // IE8及以下低版本不支持 undefined
-        console.log(oParent.clientWidth);
         var cols = Math.floor(oParent.clientWidth / oBoxW);
         console.log(cols);
         //设置main的宽度，并且居中
-        oParent.style.cssText += 'width:' + oBoxW * cols + 'px; margin: 0 auto';
+        oParent.style.cssText += 'width:' + oBoxW * cols + 'px;';
         //找出高度最小的图片，将下一个图片放在下面
         //定义一个数组，存放每一列的高度，初始化存的是第一行的所有列的高度
-        
+
         var arrH = [];
         for (var i = 0; i < oBoxs.length; i++) {
             if (i < cols) {
@@ -243,7 +239,6 @@
         console.log(boxArr)
         return boxArr;
     }
-
 
     //获取当前最小值的下标
     function getMinhIndex(array, min) {

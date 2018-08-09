@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #main {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .box {
+            padding: 15px 0px 0px 15px;
+            float: left;
+        }
+
+        .pic {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .pic img {
+            width: 165px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="main">
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a1.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+        
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/xiongmao.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/a3.jpg">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="pic">
+                        <img src="../imgs/nothing.png">
+                    </div>
+                </div>
+            </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(window).on('load', function () {
+        //1.实现瀑布流布局
+        waterFall();
+
+        //2.滚动加载
+        $(window).on('scroll', function () {
+            return;
+            //判断是否加载
+            if (checkWillLoad()) {
+                ////创造假数据
+                var data = {
+                    'dataImg': [{
+                        'img': 'a3.jpg'
+                    }, {
+                        'img': 'nothing.png'
+                    }, {
+                        'img': 'a3.jpg'
+                    }, {
+                        'img': 'xiongmao.jpg'
+                    }, {
+                        'img': 'a3.jpg'
+                    }, {
+                        'img': 'a8.jpg'
+                    }, {
+                        'img': 'a8.jpg'
+                    }]
+                };
+                //遍历创建盒子
+                $.each(data.dataImg, function (index, value) {
+                    //创建一个div标签 设置它的类为'box' 添加到'main'里面去
+                    var newBox = $('<div>').addClass('box').appendTo($('#main'));
+                    var newPic = $('<div>').addClass('pic').appendTo($(newBox));
+                    //创建img  取出遍历的对象value的img属性对应的值
+                    $('<img>').attr('src', '../imgs/' + $(value).attr('img')).appendTo($(newPic));
+                })
+                //1.实现瀑布流布局
+                waterFall();
+            }
+        });
+    });
+
+    //实现瀑布流布局
+    function waterFall() {
+        //拿到所有的盒子
+        var allBox = $('#main > .box');
+        // console.log(allBox)
+        //取出其中一个盒子的宽度
+        var boxWidth = $(allBox).eq(0).outerWidth();
+        //取出屏幕的高度
+        var screenWidth = $(window).width();
+        //求出列数 //取整函数取整
+        var cols = Math.floor(screenWidth / boxWidth);
+        //父标签居中
+        $('#main').css({
+            'width': cols * boxWidth + 'px',
+            'margin': '0 auto'
+        });
+        //对子盒子定位
+        var heightArr = [];
+        //遍历
+        $.each(allBox, function (index, value) {
+            //取出单独盒子的高度
+            var boxHeight = $(value).outerHeight();
+            //判断是否第一行
+            if (index < cols) {
+                heightArr[index] = boxHeight;
+            } else //剩余的盒子要瀑布流布局
+            {
+                //求出最矮的盒子高度
+                var minBoxHeight = Math.min.apply(null, heightArr);
+                //取出最矮高度对应的索引  封装了js的这个方法
+                var minBoxIndex = $.inArray(minBoxHeight, heightArr);
+                //定位
+                $(value).css({
+                    'position': 'absolute',
+                    'top': minBoxHeight + 'px',
+                    'left': minBoxIndex * boxWidth + 'px'
+                });
+                //更新数组中最矮的高度
+                heightArr[minBoxIndex] += boxHeight;
+            }
+        })
+
+    }
+
+    //判断是否符合加载条件
+    function checkWillLoad() {
+        
+        //直接取出最后一个盒子
+        var lastBox = $('#main > div').last();
+        // console.log(lastBox)
+        //取出最后一个盒子高度的一半 + 头部偏离的位置
+        console.log($(lastBox).outerHeight());
+        console.log($(lastBox).offset().top);
+        var lastBoxDis = $(lastBox).outerHeight() + $(lastBox).offset().top;
+        //求出浏览器的高度
+        var clientHeight = $(window).height();
+        //求出页面偏离浏览器高度
+        var scrollTopHeight = $(window).scrollTop();
+        //比较返回
+        console.log(lastBoxDis,"浏览器高度"+clientHeight,"总和高度"+(clientHeight + scrollTopHeight))
+        return lastBoxDis <= clientHeight + scrollTopHeight;
+    }
+</script>
+
+</html>
