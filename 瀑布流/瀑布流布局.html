@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #main {
+            position: relative;
+        }
+
+        .box {
+            padding: 15px 0px 0px 15px;
+            float: left;
+        }
+
+        .pic {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px #ccc;
+        }
+
+        .pic img {
+            width: 165px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" style="background: red;height: 900px;">
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a1.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/xiongmao.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/a3.jpg">
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="../imgs/nothing.png">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        waterFull('main', 'box');
+    }
+
+    function waterFull(parent, children) {
+        var oParent = document.getElementById(parent);
+
+        var oBoxs = getByClass(oParent, children);
+        console.log(oParent)
+        console.log(oBoxs)
+        //计算整个页面显示的列数
+
+        var oBoxW = oBoxs[0].offsetWidth;
+        console.log(oBoxW);
+        console.log(oParent.style.width); // 写在行内的样式可以得到值
+        console.log(oParent.currentStyle.width); // chrome Firefox 报错；   IE 是设置的值
+        console.log(window.getComputedStyle(oParent).width); // IE8及以下低版本不支持 报错
+        console.log(oParent.getBoundingClientRect().width); // IE8及以下低版本不支持 undefined
+        console.log(oParent.clientWidth);
+        var cols = Math.floor(oParent.clientWidth / oBoxW);
+        console.log(cols);
+        //设置main的宽度，并且居中
+        oParent.style.cssText += 'width:' + oBoxW * cols + 'px; margin: 0 auto';
+        //找出高度最小的图片，将下一个图片放在下面
+        //定义一个数组，存放每一列的高度，初始化存的是第一行的所有列的高度
+        
+        var arrH = [];
+        for (var i = 0; i < oBoxs.length; i++) {
+            if (i < cols) {
+                arrH.push(oBoxs[i].offsetHeight);
+            } else {
+                var minH = Math.min.apply(null, arrH);
+                var minIndex = getMinhIndex(arrH, minH);
+                oBoxs[i].style.position = 'absolute';
+                oBoxs[i].style.top = minH + 'px';
+                oBoxs[i].style.left = minIndex * oBoxW + 'px';
+                //  oBoxs[i].style.left = arrH[minIndex].;
+                arrH[minIndex] += oBoxs[i].offsetHeight;
+            }
+        }
+    }
+
+    function getByClass(parent, className) {
+        var boxArr = new Array(); //用来获取所有class为box的元素
+        oElement = parent.getElementsByTagName('*');
+        console.log(oElement)
+        for (var i = 0; i < oElement.length; i++) {
+            if (oElement[i].className == className) {
+                boxArr.push(oElement[i]);
+            }
+        };
+        console.log(boxArr)
+        return boxArr;
+    }
+
+
+    //获取当前最小值的下标
+    function getMinhIndex(array, min) {
+        for (var i in array) {
+            if (array[i] == min)
+                return i;
+        }
+    }
+</script>
+
+</html>
