@@ -12,7 +12,6 @@
 
         #main {
             position: relative;
-            margin: 0 auto;
         }
 
         .box {
@@ -32,6 +31,7 @@
             height: auto;
         }
     </style>
+
 </head>
 
 <body>
@@ -291,7 +291,7 @@
         //求出页面偏离浏览器高度
         var scrollTopHeight = $(window).scrollTop();
         //比较返回
-        console.log(lastBoxDis,"浏览器高度"+clientHeight,"总和高度"+(clientHeight + scrollTopHeight))
+        console.log(lastBoxDis, "浏览器高度" + clientHeight, "总和高度" + (clientHeight + scrollTopHeight))
         return lastBoxDis <= clientHeight + scrollTopHeight;
     }
 </script>
