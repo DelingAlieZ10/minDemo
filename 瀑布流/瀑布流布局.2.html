@@ -217,7 +217,7 @@
                 heightArr[index] = value.clientHeight;
             } else {
                 var minHeight = Math.min.apply(null, heightArr)
-                console.log(minHeight);
+                // console.log(minHeight);
                 var minHeightIndex = $.inArray(minHeight, heightArr);
                 // console.log(minHeightIndex);
                 // console.log(itemWidth)
@@ -226,7 +226,7 @@
                     "top": heightArr[minHeightIndex] + "px",
                     "left": minHeightIndex * itemWidth + "px"
                 })
-                console.log(heightArr[minHeightIndex]);
+                // console.log(heightArr[minHeightIndex]);
                 // console.log(heightArr[minHeightIndex]*itemWidth);
                 heightArr[minHeightIndex] += itemHeight
             }

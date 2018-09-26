@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+            height: 160px;
+            /* 以下样式是为了做渐变效果 */
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        img[src] {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a8.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a1.png" alt=""></li>
+        <li><img src="" data-src="../imgs/a3.jpg" alt=""></li>
+        <li><img src="" data-src="../imgs/a5.jpg" alt=""></li>
+
+    </ul>
+</body>
+<script type="text/javascript">
+    /*  图片懒加载的思路  */
+    //  * 1、提前给所有图片设置宽和高用来占位   
+    //  * 2、不设置图片的src属性，而是自定义一个data-src属性来存储图片的路径 
+    //  * 3、判断当前屏幕的位置（图片的top值和屏幕底部的值），来进行是否显示图片，如果需要显示的话，把data-src的值给src             
+    //获取所有图片           
+
+    var imgs = document.querySelectorAll("img");
+    //设置滚动事件    
+    window.onscroll = lazyloadFn;
+    //屏幕的高度          
+    var sh = window.innerHeight;
+    // console.log(sh);
+    //刚进来需要先调用下        
+    lazyloadFn();
+    //图片懒加载的方法       
+    function lazyloadFn() {
+        //获取滚动的距离 
+        console.log(document.documentElement.scrollTop);
+        console.log(document.body.scrollTop);
+        var st = document.documentElement.scrollTop || document.body.scrollTop;
+        //计算滚动中的底部的值             
+        var sn = sh + st;
+        // console.log(st, sn);
+        //循环所有的图片    
+        for (var i = 0; i < imgs.length; i++) {
+            if (imgs[i].offsetTop <= sn) {
+                imgs[i].src = imgs[i].getAttribute("data-src");
+            }
+        }
+    }
+</script>

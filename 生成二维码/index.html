@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        div {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="qrcode"></div>
+    <input type="text" placeholder="请输入要生成的文本" class="textInput">
+    <input type="button" value="清除二维码" onclick="clearCode()" class="clearBtn" disabled="true">
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="./qrcode.js"></script>
+<script type="text/javascript">
+    // new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        // text: val,
+        width: 128,
+        height: 128,
+        colorDark: "#000",
+        colorLight: "#fff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    function makeCode() {
+        var val = $(".textInput").val();
+        
+        $(".textInput").onkeyup=function(){
+            if(val.length>=1){
+                //code 向后台提交
+                console.log(111);
+            }
+        }
+        // if(!val){
+        //     alert("请输入文本再来");
+        //     return;
+        // }
+        qrcode.makeCode(val);
+        $(".clearBtn").attr("disabled",false);
+       
+    }
+    
+    $(".textInput").on("blur", function () {
+        makeCode();
+    })
+
+    function clearCode() {
+        qrcode.clear();
+        // qrcode.makeCode("测试专用文本"); 
+    }
+</script>
+
+</html>
